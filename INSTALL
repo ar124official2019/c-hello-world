@@ -16,9 +16,12 @@ Hello World
 	$ hello
 
 !. If you have not `make' installed, compile and install manually as:
-	$ gcc -c greet.c && \
-	  gcc -c main.c && \
-	  gcc -o hello greet.o main.o
-	$ sudo cp -rf hello /usr/bin/ 
+	$ gcc -c src/greet.c && \
+	  gcc -c src/main.c && \
+	  gcc -o bin/hello greet.o main.o
+
+	$ sudo cp -rf bin/hello /usr/bin/ 
+
+	$ rm -rf *.o
 	
    Run agin using 4.

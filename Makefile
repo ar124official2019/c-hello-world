@@ -1,14 +1,14 @@
 hello: main.o greet.o
-	gcc -o hello main.o greet.o
+	gcc -o bin/hello main.o greet.o
 
 main.o:
-	gcc -c main.c
+	gcc -c src/main.c
 
 greet.o:
-	gcc -c greet.c
+	gcc -c src/greet.c
 
 install:
-	cp -rf hello /usr/bin
+	cp -rf bin/hello /usr/bin
 
 clean:
 	rm -rf main.o greet.o
