@@ -1,4 +1,5 @@
 hello: main.o greet.o
+	mkdir bin
 	gcc -o bin/hello main.o greet.o
 
 main.o:

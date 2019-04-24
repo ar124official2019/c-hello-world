@@ -16,6 +16,7 @@ Hello World
 	$ hello
 
 !. If you have not `make' installed, compile and install manually as:
+	$ mkdir bin
 	$ gcc -c src/greet.c && \
 	  gcc -c src/main.c && \
 	  gcc -o bin/hello greet.o main.o
